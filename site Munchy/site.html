@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MunchyDino</title>
+    <meta name="description" content="MunchyDino - The Most Epic Dino Token in Crypto History. Join the prehistoric revolution!">
+    <meta name="keywords" content="MunchyDino, Crypto, Tokenomics, DeFi, Community">
+    <link rel="stylesheet" href="site.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ticker-wrapper">
+        <div class="ticker">
+            <div class="ticker-content">
+                $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY
+            </div>
+            <div class="ticker-content">
+                $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY $MUNCHY
+            </div>
+        </div>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="cyber-title">MunchyDino</h1>
+            <p class="cyber-subtitle">Where Prehistoric Meets Decentralized</p>
+            <div class="dino-container">
+                <img src="MunchyDino.png" alt="MunchyDino" class="floating-dino">
+            </div>
+            <p class="hero-text">MunchyDino was born out of a passion for crypto and a love for dinosaurs. We aim to bring people together through fun, innovation, and community-driven growth. Let's make history together in the world of decentralized finance!</p>
+            <a href="https://moonlaunch.fun/" class="buy-now-btn" target="_blank" rel="noopener noreferrer">Buy Now</a>
+        </div>
+    </section>
+
+    <section class="slider-section" id="slider">
+        <div class="slider">
+            <div class="slide-track">
+                <img src="1.webp" alt="Dino" class="slide">
+                <img src="i.webp" alt="Dino" class="slide">
+                <img src="o.webp" alt="Dino" class="slide">
+                <img src="a.webp" alt="Dino" class="slide">
+                <img src="b.webp" alt="Dino" class="slide">
+                <img src="d.webp" alt="Dino" class="slide">
+                <img src="p.webp" alt="Dino" class="slide">
+                <img src="t.webp" alt="Dino" class="slide">
+                <img src="v.webp" alt="Dino" class="slide">
+                <img src="z.webp" alt="Dino" class="slide">
+                <!-- Duplicate slides for seamless loop -->
+                <img src="1.webp" alt="Dino" class="slide">
+                <img src="i.webp" alt="Dino" class="slide">
+                <img src="o.webp" alt="Dino" class="slide">
+                <img src="a.webp" alt="Dino" class="slide">
+                <img src="b.webp" alt="Dino" class="slide">
+                <img src="d.webp" alt="Dino" class="slide">
+                <img src="p.webp" alt="Dino" class="slide">
+                <img src="t.webp" alt="Dino" class="slide">
+                <img src="v.webp" alt="Dino" class="slide">
+                <img src="z.webp" alt="Dino" class="slide">
+            </div>
+        </div>
+    </section>
+
+    <section class="tokenomics-section" id="tokenomics">
+        <div class="hologram-card">
+            <h2>Tokenomics</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">1B</div>
+                    <div class="stat-label">Total Supply</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">coming soon</div>
+                    <div class="stat-label">Current Price</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">coming soon</div>
+                    <div class="stat-label">Market Cap</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-section" id="community">
+        <h2>Join the Prehistoric Crypto Movement</h2>
+        <div class="social-grid">
+            <a href="https://t.me/MunchyDino" class="social-card telegram" target="_blank" rel="noopener noreferrer">
+                <img src="Telegram_logo_icon.webp" alt="Telegram">
+                <span>Telegram</span>
+            </a>
+            <a href="https://x.com/Munchy_Dino" class="social-card twitter" target="_blank" rel="noopener noreferrer">
+                <img src="Logo_of_Twitter.webp" alt="Twitter">
+                <span>Twitter</span>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Animation au défilement
+        const sections = document.querySelectorAll('section');
+        
+        const observerOptions = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: "0px"
+        };
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
